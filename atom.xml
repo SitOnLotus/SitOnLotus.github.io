@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sitonlotus.github.io/"/>
-  <updated>2020-05-12T05:20:50.204Z</updated>
+  <updated>2020-05-12T12:56:09.878Z</updated>
   <id>https://sitonlotus.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://sitonlotus.github.io/2020/05/12/div%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/"/>
     <id>https://sitonlotus.github.io/2020/05/12/div%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/</id>
     <published>2020-05-12T02:24:10.000Z</published>
-    <updated>2020-05-12T05:20:50.204Z</updated>
+    <updated>2020-05-12T12:56:09.878Z</updated>
     
     <content type="html"><![CDATA[<p>这篇文章主要是写关于在前端工作中，如何将一个div水平垂直居中。</p><p>这里有很多方法，下面介绍好几种常见的方法</p>]]></content>
     
@@ -37,6 +37,8 @@
     </summary>
     
     
+    
+      <category term="前端 面试题" scheme="https://sitonlotus.github.io/tags/%E5%89%8D%E7%AB%AF-%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
   </entry>
   
