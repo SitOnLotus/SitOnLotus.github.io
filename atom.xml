@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sitonlotus.github.io/"/>
-  <updated>2020-05-12T12:56:09.878Z</updated>
+  <updated>2020-05-12T13:00:34.714Z</updated>
   <id>https://sitonlotus.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://sitonlotus.github.io/2020/05/12/div%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/"/>
     <id>https://sitonlotus.github.io/2020/05/12/div%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/</id>
     <published>2020-05-12T02:24:10.000Z</published>
-    <updated>2020-05-12T12:56:09.878Z</updated>
+    <updated>2020-05-12T13:00:34.714Z</updated>
     
     <content type="html"><![CDATA[<p>这篇文章主要是写关于在前端工作中，如何将一个div水平垂直居中。</p><p>这里有很多方法，下面介绍好几种常见的方法</p>]]></content>
     
@@ -38,24 +38,27 @@
     
     
     
-      <category term="前端 面试题" scheme="https://sitonlotus.github.io/tags/%E5%89%8D%E7%AB%AF-%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+      <category term="前端" scheme="https://sitonlotus.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="面试题" scheme="https://sitonlotus.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://sitonlotus.github.io/2020/05/12/hello-world/"/>
-    <id>https://sitonlotus.github.io/2020/05/12/hello-world/</id>
+    <title>使用hexo写博客并发布</title>
+    <link href="https://sitonlotus.github.io/2020/05/12/%E4%BD%BF%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%B9%B6%E5%8F%91%E5%B8%83/"/>
+    <id>https://sitonlotus.github.io/2020/05/12/%E4%BD%BF%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%B9%B6%E5%8F%91%E5%B8%83/</id>
     <published>2020-05-12T00:59:51.505Z</published>
-    <updated>2020-05-12T00:59:51.505Z</updated>
+    <updated>2020-05-12T13:34:40.633Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>使用hexo搭建博客，唯一一个方便就是将自己的博客放在GitHub仓库里面，只需要访问即可，这可以省去购买服务器和域名的钱，同时也省去了维护的成本。</p><h2 id="使用hexo搭建博客"><a href="#使用hexo搭建博客" class="headerlink" title="使用hexo搭建博客"></a>使用hexo搭建博客</h2><h3 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h3><p>对于前期的准备，就是需要安装nodejs、git，对于编辑器的话，自己按照自己的喜好选择即可。</p><p>nodejs主要使用的是其npm管理工具，主要是安装一些依赖包，而git的话使用它推送到远程仓库。这里就不介绍这两的安装过程，对于小白的话，百度一下教程随处可见，这里就不花过多的语言来描述。</p><h3 id="全局安装hexo"><a href="#全局安装hexo" class="headerlink" title="全局安装hexo"></a>全局安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure><h3 id="新建博客系统同时初始化"><a href="#新建博客系统同时初始化" class="headerlink" title="新建博客系统同时初始化"></a>新建博客系统同时初始化</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init <span class="string">"blog-name"</span></span><br></pre></td></tr></table></figure><p>或者是</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir <span class="string">"blog-name"</span></span><br><span class="line">$ <span class="built_in">cd</span> <span class="string">"blog-name"</span></span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure><p>这里需要下载一些文件，以及对主题的拉取，事件会稍微久点，等待拉取完后，进行一下操作，测试博客。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><p>注意：<code>hexo clean</code>命令是将项目的缓存进行清理，<code>hexo g</code>是生成博客的静态文件，<code>hexo s</code>是在本地开启预览的服务器。</p><h3 id="配置部署"><a href="#配置部署" class="headerlink" title="配置部署"></a>配置部署</h3><p>首先在github仓库中，新建一个仓库，其仓库名一定是<code>&quot;GitHub账户名&quot;.github.io</code>，并设置开放的仓库。</p><p>配置的话，在根目录下_config.yml文件中，在最后的<code>deploy</code>中，需要配置一下内容</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#39;git&#39;</span><br><span class="line">  repository: &#39;仓库名&#39;</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><h3 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><p>如果你配置了私钥，此时就不需要输入GitHub账号和密码，反之则会自己输入。</p><h2 id="后期维护"><a href="#后期维护" class="headerlink" title="后期维护"></a>后期维护</h2><h3 id="修改更换主题"><a href="#修改更换主题" class="headerlink" title="修改更换主题"></a>修改更换主题</h3><p>在</p><h3 id="设置关于、标签、分类、归档、时间线"><a href="#设置关于、标签、分类、归档、时间线" class="headerlink" title="设置关于、标签、分类、归档、时间线"></a>设置关于、标签、分类、归档、时间线</h3><h3 id="写文章发布"><a href="#写文章发布" class="headerlink" title="写文章发布"></a>写文章发布</h3>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;p&gt;使用hexo搭建博客，唯一一个方便就是将自己的博客放在GitHub仓库里面，只需要访问即可，这可以省去购买服务器和域名的钱，同时也省去了维护的成本。&lt;/p&gt;
+&lt;h2 id=&quot;使用hexo搭建博客&quot;&gt;&lt;a href=&quot;#使用hexo搭建博客&quot; class=&quot;headerlin
       
     
     </summary>
