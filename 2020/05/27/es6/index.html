@@ -17,22 +17,23 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>使用hexo写博客并发布 | Hexo</title>
-  <meta name="description" content="使用hexo搭建博客，唯一一个方便就是将自己的博客放在GitHub仓库里面，只需要访问即可，这可以省去购买服务器和域名的钱，同时也省去了维护的成本。 使用hexo搭建博客前期准备对于前期的准备，就是需要安装nodejs、git，对于编辑器的话，自己按照自己的喜好选择即可。 nodejs主要使用的是其npm管理工具，主要是安装一些依赖包，而git的话使用它推送到远程仓库。这里就不介绍这两的安装过程，">
+  <title>es6 | Hexo</title>
+  <meta name="description" content="知识点整理面试题关于Promise的使用1) 拥Promise实现延迟函数delay(2020年阿里伯乐面试) 12345678910function delay(time)&amp;#123;  return new Promise((resolve)&#x3D;&gt;&amp;#123;    setTimeout(()&#x3D;&gt;&amp;#123;      resolve();    &amp;#125;,time)  &amp;#12">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用hexo写博客并发布">
-<meta property="og:url" content="https://sitonlotus.github.io/2020/05/12/%E4%BD%BF%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%B9%B6%E5%8F%91%E5%B8%83/index.html">
+<meta property="og:title" content="es6">
+<meta property="og:url" content="https://sitonlotus.github.io/2020/05/27/es6/index.html">
 <meta property="og:site_name" content="下弯的松枝">
-<meta property="og:description" content="使用hexo搭建博客，唯一一个方便就是将自己的博客放在GitHub仓库里面，只需要访问即可，这可以省去购买服务器和域名的钱，同时也省去了维护的成本。 使用hexo搭建博客前期准备对于前期的准备，就是需要安装nodejs、git，对于编辑器的话，自己按照自己的喜好选择即可。 nodejs主要使用的是其npm管理工具，主要是安装一些依赖包，而git的话使用它推送到远程仓库。这里就不介绍这两的安装过程，">
+<meta property="og:description" content="知识点整理面试题关于Promise的使用1) 拥Promise实现延迟函数delay(2020年阿里伯乐面试) 12345678910function delay(time)&amp;#123;  return new Promise((resolve)&#x3D;&gt;&amp;#123;    setTimeout(()&#x3D;&gt;&amp;#123;      resolve();    &amp;#125;,time)  &amp;#12">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-05-12T00:59:51.505Z">
-<meta property="article:modified_time" content="2020-05-12T13:57:14.818Z">
+<meta property="article:published_time" content="2020-05-27T00:35:31.000Z">
+<meta property="article:modified_time" content="2020-05-27T00:38:40.061Z">
 <meta property="article:author" content="刘作莲">
-<meta property="article:tag" content="博客">
 <meta property="article:tag" content="前端">
+<meta property="article:tag" content="es6">
+<meta property="article:tag" content="面试">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://sitonlotus.github.io/2020/05/12/%E4%BD%BF%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%B9%B6%E5%8F%91%E5%B8%83/index.html">
+  <link rel="canonical" href="https://sitonlotus.github.io/2020/05/27/es6/index.html">
   
     <link rel="alternate" href="/atom.xml" title="下弯的松枝" type="application/atom+xml">
   
@@ -219,7 +220,7 @@
   <div class="widget">
     <h3 class="widget-title">标签</h3>
     <div class="widget-body">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="tag">面试题</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/es6/" rel="tag">es6</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9D%A2%E8%AF%95/" rel="tag">面试</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="tag">面试题</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -229,7 +230,7 @@
   <div class="widget">
     <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
-      <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 14px;">前端</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 13px;">博客</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 13px;">面试题</a>
+      <a href="/tags/es6/" style="font-size: 13px;">es6</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 14px;">前端</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 13px;">博客</a> <a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 13px;">面试</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 13px;">面试题</a>
     </div>
   </div>
 
@@ -238,7 +239,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -257,7 +258,22 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2020/05/12/div%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/" class="title">div水平垂直居中.md</a>
+                <a href="/2020/05/27/es6/" class="title">es6</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2020-05-27T00:35:31.000Z" itemprop="datePublished">2020-05-27</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2020/05/12/making_div_centering/" class="title">div水平垂直居中.md</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-05-12T02:24:10.000Z" itemprop="datePublished">2020-05-12</time>
@@ -272,7 +288,7 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2020/05/12/%E4%BD%BF%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%B9%B6%E5%8F%91%E5%B8%83/" class="title">使用hexo写博客并发布</a>
+                <a href="/2020/05/12/making_blog_by_hexo/" class="title">使用hexo写博客并发布</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-05-12T00:59:51.505Z" itemprop="datePublished">2020-05-12</time>
@@ -293,14 +309,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-使用hexo写博客并发布" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-es6" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      使用hexo写博客并发布
+      es6
     </h1>
   
 
@@ -308,45 +324,28 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2020/05/12/%E4%BD%BF%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%B9%B6%E5%8F%91%E5%B8%83/" class="article-date">
-	  <time datetime="2020-05-12T00:59:51.505Z" itemprop="datePublished">2020-05-12</time>
+	<a href="/2020/05/27/es6/" class="article-date">
+	  <time datetime="2020-05-27T00:35:31.000Z" itemprop="datePublished">2020-05-27</time>
 	</a>
 </span>
         
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a>, <a class="article-tag-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a>
+	<a class="article-tag-link" href="/tags/es6/" rel="tag">es6</a>, <a class="article-tag-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a>, <a class="article-tag-link" href="/tags/%E9%9D%A2%E8%AF%95/" rel="tag">面试</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/05/12/%E4%BD%BF%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%B9%B6%E5%8F%91%E5%B8%83/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/05/27/es6/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>使用hexo搭建博客，唯一一个方便就是将自己的博客放在GitHub仓库里面，只需要访问即可，这可以省去购买服务器和域名的钱，同时也省去了维护的成本。</p>
-<h2 id="使用hexo搭建博客"><a href="#使用hexo搭建博客" class="headerlink" title="使用hexo搭建博客"></a>使用hexo搭建博客</h2><h3 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h3><p>对于前期的准备，就是需要安装nodejs、git，对于编辑器的话，自己按照自己的喜好选择即可。</p>
-<p>nodejs主要使用的是其npm管理工具，主要是安装一些依赖包，而git的话使用它推送到远程仓库。这里就不介绍这两的安装过程，对于小白的话，百度一下教程随处可见，这里就不花过多的语言来描述。</p>
-<h3 id="全局安装hexo"><a href="#全局安装hexo" class="headerlink" title="全局安装hexo"></a>全局安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<h3 id="新建博客系统同时初始化"><a href="#新建博客系统同时初始化" class="headerlink" title="新建博客系统同时初始化"></a>新建博客系统同时初始化</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init <span class="string">"blog-name"</span></span><br></pre></td></tr></table></figure>
-<p>或者是</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir <span class="string">"blog-name"</span></span><br><span class="line">$ <span class="built_in">cd</span> <span class="string">"blog-name"</span></span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
-<p>这里需要下载一些文件，以及对主题的拉取，事件会稍微久点，等待拉取完后，进行一下操作，测试博客。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-<p>注意：<code>hexo clean</code>命令是将项目的缓存进行清理，<code>hexo g</code>是生成博客的静态文件，<code>hexo s</code>是在本地开启预览的服务器。</p>
-<h3 id="配置部署"><a href="#配置部署" class="headerlink" title="配置部署"></a>配置部署</h3><p>首先在github仓库中，新建一个仓库，其仓库名一定是<code>&quot;GitHub账户名&quot;.github.io</code>，并设置开放的仓库。</p>
-<p>配置的话，在根目录下_config.yml文件中，在最后的<code>deploy</code>中，需要配置一下内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#39;git&#39;</span><br><span class="line">  repository: &#39;仓库名&#39;</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<h3 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<p>如果你配置了私钥，此时就不需要输入GitHub账号和密码，反之则会自己输入。</p>
-<h2 id="后期维护"><a href="#后期维护" class="headerlink" title="后期维护"></a>后期维护</h2><h3 id="修改更换主题"><a href="#修改更换主题" class="headerlink" title="修改更换主题"></a>修改更换主题</h3><p>在</p>
-<h3 id="设置关于、标签、分类、归档、时间线"><a href="#设置关于、标签、分类、归档、时间线" class="headerlink" title="设置关于、标签、分类、归档、时间线"></a>设置关于、标签、分类、归档、时间线</h3><h3 id="写文章发布"><a href="#写文章发布" class="headerlink" title="写文章发布"></a>写文章发布</h3>
+        <h1 id="知识点整理"><a href="#知识点整理" class="headerlink" title="知识点整理"></a>知识点整理</h1><h1 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h1><h2 id="关于Promise的使用"><a href="#关于Promise的使用" class="headerlink" title="关于Promise的使用"></a>关于Promise的使用</h2><p>1) 拥Promise实现延迟函数delay(2020年阿里伯乐面试)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">delay</span>(<span class="params">time</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve</span>)=&gt;</span>&#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">      resolve();</span><br><span class="line">    &#125;,time)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line">delay(<span class="number">1000</span>).then(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"resolved"</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
       
     </div>
     <div class="article-footer">
@@ -355,7 +354,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://sitonlotus.github.io/2020/05/12/%E4%BD%BF%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%B9%B6%E5%8F%91%E5%B8%83/" title="使用hexo写博客并发布" target="_blank" rel="external">https://sitonlotus.github.io/2020/05/12/%E4%BD%BF%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2%E5%B9%B6%E5%8F%91%E5%B8%83/</a>
+      <a href="https://sitonlotus.github.io/2020/05/27/es6/" title="es6" target="_blank" rel="external">https://sitonlotus.github.io/2020/05/27/es6/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -401,10 +400,10 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2020/05/12/div%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/" title="div水平垂直居中.md"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
     
+    <li class="next">
+      <a href="/2020/05/12/making_div_centering/" title="div水平垂直居中.md"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
     
     
   </ul>
