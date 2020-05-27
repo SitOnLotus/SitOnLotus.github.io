@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sitonlotus.github.io/"/>
-  <updated>2020-05-27T01:40:04.935Z</updated>
+  <updated>2020-05-27T01:43:12.963Z</updated>
   <id>https://sitonlotus.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://sitonlotus.github.io/2020/05/27/javascript/"/>
     <id>https://sitonlotus.github.io/2020/05/27/javascript/</id>
     <published>2020-05-27T01:36:45.000Z</published>
-    <updated>2020-05-27T01:40:04.935Z</updated>
+    <updated>2020-05-27T01:43:12.963Z</updated>
     
     <content type="html"><![CDATA[<h1 id="JS初级"><a href="#JS初级" class="headerlink" title="JS初级"></a>JS初级</h1><h1 id="JS高级"><a href="#JS高级" class="headerlink" title="JS高级"></a>JS高级</h1><h1 id="JS面试题详解"><a href="#JS面试题详解" class="headerlink" title="JS面试题详解"></a>JS面试题详解</h1><p>1) 实现一个简单的EventEmitter，要求实现on(绑定事件)，off(解绑事件)和emit(触发事件)</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">EventEmitter</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.handlers=&#123;&#125;;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.prototype);</span><br><span class="line">&#125;</span><br><span class="line">EventEmitter.prototype.on=<span class="function"><span class="keyword">function</span>(<span class="params">type,fn</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(!<span class="keyword">this</span>.handlers[type])&#123;</span><br><span class="line">    <span class="keyword">this</span>.handlers[type]=[];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">this</span>.handlers[type].push(fn);</span><br><span class="line">  <span class="comment">// console.log(this)</span></span><br><span class="line">&#125;</span><br><span class="line">EventEmitter.prototype.off = <span class="function"><span class="keyword">function</span>(<span class="params">type, fn</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!<span class="keyword">this</span>.handlers[type]) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (!fn) &#123;</span><br><span class="line">    <span class="keyword">this</span>.handlers[type] = <span class="literal">undefined</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">delete</span> <span class="keyword">this</span>.handlers[type];</span><br><span class="line">&#125;</span><br><span class="line">EventEmitter.prototype.emit = <span class="function"><span class="keyword">function</span>(<span class="params">type</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!<span class="keyword">this</span>.handlers[type]) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">this</span>.handlers[type].forEach(<span class="function"><span class="params">fn</span> =&gt;</span> fn());</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> h=<span class="keyword">new</span> EventEmitter();</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"hello"</span>)</span><br><span class="line">&#125;</span><br><span class="line">h.on(<span class="string">"f1"</span>,f1);</span><br><span class="line">h.emit(<span class="string">"f1"</span>,f1)</span><br><span class="line">h.off(<span class="string">"f1"</span>,f1)</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -36,6 +36,14 @@
     
     
     
+      <category term="知识点" scheme="https://sitonlotus.github.io/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+      <category term="面试" scheme="https://sitonlotus.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+      <category term="ES5" scheme="https://sitonlotus.github.io/tags/ES5/"/>
+    
+      <category term="JavaScript" scheme="https://sitonlotus.github.io/tags/JavaScript/"/>
+    
   </entry>
   
   <entry>
@@ -43,7 +51,7 @@
     <link href="https://sitonlotus.github.io/2020/05/27/es6/"/>
     <id>https://sitonlotus.github.io/2020/05/27/es6/</id>
     <published>2020-05-27T00:35:31.000Z</published>
-    <updated>2020-05-27T01:38:45.751Z</updated>
+    <updated>2020-05-27T01:43:18.860Z</updated>
     
     <content type="html"><![CDATA[<h1 id="知识点整理"><a href="#知识点整理" class="headerlink" title="知识点整理"></a>知识点整理</h1><h1 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h1><h2 id="关于Promise的使用"><a href="#关于Promise的使用" class="headerlink" title="关于Promise的使用"></a>关于Promise的使用</h2><p>1) 用Promise实现延迟函数delay(2020年阿里伯乐面试)</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">delay</span>(<span class="params">time</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve</span>)=&gt;</span>&#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">      resolve();</span><br><span class="line">    &#125;,time)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line">delay(<span class="number">1000</span>).then(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"resolved"</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -58,9 +66,11 @@
     
     
     
-      <category term="es6" scheme="https://sitonlotus.github.io/tags/es6/"/>
+      <category term="ES6" scheme="https://sitonlotus.github.io/tags/ES6/"/>
     
       <category term="前端" scheme="https://sitonlotus.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="知识点" scheme="https://sitonlotus.github.io/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     
       <category term="面试" scheme="https://sitonlotus.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
     
