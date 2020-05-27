@@ -17,16 +17,20 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>归档: 2020 | Hexo</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="下弯的松枝">
-<meta property="og:url" content="https://sitonlotus.github.io/archives/2020/index.html">
+  <title>javascript知识点整理和面试题详解 | Hexo</title>
+  <meta name="description" content="JS初级JS高级JS面试题详解1) 实现一个简单的EventEmitter，要求实现on(绑定事件)，off(解绑事件)和emit(触发事件) 12345678910111213141516171819202122232425262728293031323334function EventEmitter()&amp;#123;  this.handlers&#x3D;&amp;#123;&amp;#125;;  console.l">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript知识点整理和面试题详解">
+<meta property="og:url" content="https://sitonlotus.github.io/2020/05/27/javascript/index.html">
 <meta property="og:site_name" content="下弯的松枝">
+<meta property="og:description" content="JS初级JS高级JS面试题详解1) 实现一个简单的EventEmitter，要求实现on(绑定事件)，off(解绑事件)和emit(触发事件) 12345678910111213141516171819202122232425262728293031323334function EventEmitter()&amp;#123;  this.handlers&#x3D;&amp;#123;&amp;#125;;  console.l">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-27T01:36:45.000Z">
+<meta property="article:modified_time" content="2020-05-27T01:40:04.935Z">
 <meta property="article:author" content="刘作莲">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://sitonlotus.github.io/archives/2020/index.html">
+  <link rel="canonical" href="https://sitonlotus.github.io/2020/05/27/javascript/index.html">
   
     <link rel="alternate" href="/atom.xml" title="下弯的松枝" type="application/atom+xml">
   
@@ -316,78 +320,161 @@
   
   
 <main class="main" role="main">
-  	<article class="content article article-archives article-type-list" itemscope="">
-	    <header class="article-header">
-	      <h1 itemprop="title">归档: 2020</h1>
-	      <p class="text-muted">共 4 篇文章</p>
-	    </header>
-	    <div class="article-body">
-	      
+  <div class="content">
+  <article id="post-javascript" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
   
+    <h1 class="article-title" itemprop="name">
+      javascript知识点整理和面试题详解
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2020/05/27/javascript/" class="article-date">
+	  <time datetime="2020-05-27T01:36:45.000Z" itemprop="datePublished">2020-05-27</time>
+	</a>
+</span>
+        
+        
+
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/05/27/javascript/#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="JS初级"><a href="#JS初级" class="headerlink" title="JS初级"></a>JS初级</h1><h1 id="JS高级"><a href="#JS高级" class="headerlink" title="JS高级"></a>JS高级</h1><h1 id="JS面试题详解"><a href="#JS面试题详解" class="headerlink" title="JS面试题详解"></a>JS面试题详解</h1><p>1) 实现一个简单的EventEmitter，要求实现on(绑定事件)，off(解绑事件)和emit(触发事件)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">EventEmitter</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.handlers=&#123;&#125;;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.prototype);</span><br><span class="line">&#125;</span><br><span class="line">EventEmitter.prototype.on=<span class="function"><span class="keyword">function</span>(<span class="params">type,fn</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(!<span class="keyword">this</span>.handlers[type])&#123;</span><br><span class="line">    <span class="keyword">this</span>.handlers[type]=[];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">this</span>.handlers[type].push(fn);</span><br><span class="line">  <span class="comment">// console.log(this)</span></span><br><span class="line">&#125;</span><br><span class="line">EventEmitter.prototype.off = <span class="function"><span class="keyword">function</span>(<span class="params">type, fn</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!<span class="keyword">this</span>.handlers[type]) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (!fn) &#123;</span><br><span class="line">    <span class="keyword">this</span>.handlers[type] = <span class="literal">undefined</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">delete</span> <span class="keyword">this</span>.handlers[type];</span><br><span class="line">&#125;</span><br><span class="line">EventEmitter.prototype.emit = <span class="function"><span class="keyword">function</span>(<span class="params">type</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!<span class="keyword">this</span>.handlers[type]) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">this</span>.handlers[type].forEach(<span class="function"><span class="params">fn</span> =&gt;</span> fn());</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> h=<span class="keyword">new</span> EventEmitter();</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"hello"</span>)</span><br><span class="line">&#125;</span><br><span class="line">h.on(<span class="string">"f1"</span>,f1);</span><br><span class="line">h.emit(<span class="string">"f1"</span>,f1)</span><br><span class="line">h.off(<span class="string">"f1"</span>,f1)</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://sitonlotus.github.io/2020/05/27/javascript/" title="javascript知识点整理和面试题详解" target="_blank" rel="external">https://sitonlotus.github.io/2020/05/27/javascript/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/sitonlotus" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.gif" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/sitonlotus" target="_blank"><span class="text-dark">下弯的松枝</span><small class="ml-1x">Web Developer &amp; Designer</small></a></h3>
+        <div>一个全职的前端开发工程师。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
   
     
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
     
-      
-      
-      <section class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapse2020" aria-expanded="true">
-              <i class="icon icon-calendar-plus text-active"></i><i class="icon icon-calendar-minus text"></i>
-              2020
-            </a>
-            <!-- <a href="/archives/2020" class="archive-year">2020</a> -->
-          </h3>
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2020/05/27/es6/" title="es6知识点整理及精选面试题详解"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div id="collapse2020" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2020">
-        <div class="panel-body">
-          <div class="collection">
-    
-    
-<a href="/2020/05/27/javascript/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-05-27T01:36:45.000Z" itemprop="datePublished">2020-05-27</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> javascript知识点整理和面试题详解
-</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-  
-    
-    
-    
-<a href="/2020/05/27/es6/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-05-27T00:35:31.000Z" itemprop="datePublished">2020-05-27</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> es6知识点整理及精选面试题详解
-</a>
 
-
-  
-    
-    
-    
-<a href="/2020/05/12/making_div_centering/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-05-12T02:24:10.000Z" itemprop="datePublished">2020-05-12</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> div水平垂直居中.md
-</a>
-
-
-  
-    
-    
-    
-<a href="/2020/05/12/making_blog_by_hexo/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2020-05-12T00:59:51.505Z" itemprop="datePublished">2020-05-12</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 使用hexo写博客并发布
-</a>
-
-
-  
-  
-    </div></div></div></section>
-  
-
-	    </div>
-  	</article>
-  	 	
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -444,6 +531,37 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+   
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: '',
+    appKey: '',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '5' || 10,
+    visitor: false
+  });
+  </script>
+
+     
 
 
 
