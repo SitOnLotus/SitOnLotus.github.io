@@ -2,30 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://sitonlotus.github.io/2020/05/27/es6/</loc>
+    <loc>https://sitonlotus.github.io/2020/05/28/development_environment/</loc>
     
-    <lastmod>2020-05-27T01:43:18.860Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sitonlotus.github.io/2020/05/27/javascript/</loc>
-    
-    <lastmod>2020-05-27T01:43:12.963Z</lastmod>
+    <lastmod>2020-05-28T13:12:23.516Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://sitonlotus.github.io/2020/05/12/making_div_centering/</loc>
     
-    <lastmod>2020-05-13T08:52:41.098Z</lastmod>
+    <lastmod>2020-05-28T13:05:05.843Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://sitonlotus.github.io/2020/05/12/making_blog_by_hexo/</loc>
     
-    <lastmod>2020-05-13T08:52:30.464Z</lastmod>
+    <lastmod>2020-05-28T05:27:26.853Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sitonlotus.github.io/2020/05/27/es6/</loc>
+    
+    <lastmod>2020-05-28T03:07:13.617Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sitonlotus.github.io/2020/05/27/javascript/</loc>
+    
+    <lastmod>2020-05-28T03:04:36.579Z</lastmod>
     
   </url>
   
