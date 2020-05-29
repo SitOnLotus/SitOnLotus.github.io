@@ -17,24 +17,16 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>javascript知识点整理和面试题详解 | Hexo</title>
-  <meta name="description" content="JS初级 JS高级 JS面试题详解 1) 实现一个简单的EventEmitter，要求实现on(绑定事件)，off(解绑事件)和emit(触发事件)方法一： 12345678910111213141516171819202122232425262728293031323334function EventEmitter()&amp;#123;  this.handlers&#x3D;&amp;#123;&amp;#125;;  co">
-<meta property="og:type" content="article">
-<meta property="og:title" content="javascript知识点整理和面试题详解">
-<meta property="og:url" content="https://sitonlotus.github.io/2020/05/27/javascript/index.html">
+  <title>Hexo</title>
+  <meta property="og:type" content="website">
+<meta property="og:title" content="下弯的松枝">
+<meta property="og:url" content="https://sitonlotus.github.io/page/2/index.html">
 <meta property="og:site_name" content="下弯的松枝">
-<meta property="og:description" content="JS初级 JS高级 JS面试题详解 1) 实现一个简单的EventEmitter，要求实现on(绑定事件)，off(解绑事件)和emit(触发事件)方法一： 12345678910111213141516171819202122232425262728293031323334function EventEmitter()&amp;#123;  this.handlers&#x3D;&amp;#123;&amp;#125;;  co">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-05-27T01:36:45.000Z">
-<meta property="article:modified_time" content="2020-05-28T03:04:36.579Z">
 <meta property="article:author" content="刘作莲">
-<meta property="article:tag" content="知识点">
-<meta property="article:tag" content="面试">
-<meta property="article:tag" content="ES5">
-<meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://sitonlotus.github.io/2020/05/27/javascript/index.html">
+  <link rel="canonical" href="https://sitonlotus.github.io/page/2/index.html">
   
     <link rel="alternate" href="/atom.xml" title="下弯的松枝" type="application/atom+xml">
   
@@ -337,17 +329,18 @@
 </aside>
 
   
+  <main class="main" role="main">
   
-<main class="main" role="main">
-  <div class="content">
-  <article id="post-javascript" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  
+    <div class="content">
+  <article id="post-making_blog_by_hexo" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
-    <h1 class="article-title" itemprop="name">
-      javascript知识点整理和面试题详解
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/12/making_blog_by_hexo/">使用hexo写博客并发布</a>
     </h1>
   
 
@@ -355,34 +348,45 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2020/05/27/javascript/" class="article-date">
-	  <time datetime="2020-05-27T01:36:45.000Z" itemprop="datePublished">2020-05-27</time>
+	<a href="/2020/05/12/making_blog_by_hexo/" class="article-date">
+	  <time datetime="2020-05-12T00:59:51.505Z" itemprop="datePublished">2020-05-12</time>
 	</a>
 </span>
         
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/ES5/" rel="tag">ES5</a>, <a class="article-tag-link" href="/tags/JavaScript/" rel="tag">JavaScript</a>, <a class="article-tag-link" href="/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/" rel="tag">知识点</a>, <a class="article-tag-link" href="/tags/%E9%9D%A2%E8%AF%95/" rel="tag">面试</a>
+	<a class="article-tag-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a>, <a class="article-tag-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/05/27/javascript/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/05/12/making_blog_by_hexo/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h1 id="JS初级"><a href="#JS初级" class="headerlink" title="JS初级"></a>JS初级</h1><hr>
-<h1 id="JS高级"><a href="#JS高级" class="headerlink" title="JS高级"></a>JS高级</h1><hr>
-<h1 id="JS面试题详解"><a href="#JS面试题详解" class="headerlink" title="JS面试题详解"></a>JS面试题详解</h1><hr>
-<p>1) 实现一个简单的EventEmitter，要求实现on(绑定事件)，off(解绑事件)和emit(触发事件)<br>方法一：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">EventEmitter</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.handlers=&#123;&#125;;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.prototype);</span><br><span class="line">&#125;</span><br><span class="line">EventEmitter.prototype.on=<span class="function"><span class="keyword">function</span>(<span class="params">type,fn</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(!<span class="keyword">this</span>.handlers[type])&#123;</span><br><span class="line">    <span class="keyword">this</span>.handlers[type]=[];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">this</span>.handlers[type].push(fn);</span><br><span class="line">  <span class="comment">// console.log(this)</span></span><br><span class="line">&#125;</span><br><span class="line">EventEmitter.prototype.off = <span class="function"><span class="keyword">function</span>(<span class="params">type, fn</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!<span class="keyword">this</span>.handlers[type]) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (!fn) &#123;</span><br><span class="line">    <span class="keyword">this</span>.handlers[type] = <span class="literal">undefined</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">delete</span> <span class="keyword">this</span>.handlers[type];</span><br><span class="line">&#125;</span><br><span class="line">EventEmitter.prototype.emit = <span class="function"><span class="keyword">function</span>(<span class="params">type</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!<span class="keyword">this</span>.handlers[type]) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">this</span>.handlers[type].forEach(<span class="function"><span class="params">fn</span> =&gt;</span> fn());</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> h=<span class="keyword">new</span> EventEmitter();</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"hello"</span>)</span><br><span class="line">&#125;</span><br><span class="line">h.on(<span class="string">"f1"</span>,f1);</span><br><span class="line">h.emit(<span class="string">"f1"</span>,f1)</span><br><span class="line">h.off(<span class="string">"f1"</span>,f1)</span><br></pre></td></tr></table></figure>
+        <p>使用hexo搭建博客，唯一一个方便就是将自己的博客放在GitHub仓库里面，只需要访问即可，这可以省去购买服务器和域名的钱，同时也省去了维护的成本。</p>
+<h2 id="使用hexo搭建博客"><a href="#使用hexo搭建博客" class="headerlink" title="使用hexo搭建博客"></a>使用hexo搭建博客</h2><h3 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h3><p>对于前期的准备，就是需要安装nodejs、git，对于编辑器的话，自己按照自己的喜好选择即可。</p>
+<p>nodejs主要使用的是其npm管理工具，主要是安装一些依赖包，而git的话使用它推送到远程仓库。这里就不介绍这两的安装过程，对于小白的话，百度一下教程随处可见，这里就不花过多的语言来描述。</p>
+<h3 id="全局安装hexo"><a href="#全局安装hexo" class="headerlink" title="全局安装hexo"></a>全局安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
-<p>方法二：</p>
+<h3 id="新建博客系统同时初始化"><a href="#新建博客系统同时初始化" class="headerlink" title="新建博客系统同时初始化"></a>新建博客系统同时初始化</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init <span class="string">"blog-name"</span></span><br></pre></td></tr></table></figure>
+<p>或者是</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir <span class="string">"blog-name"</span></span><br><span class="line">$ <span class="built_in">cd</span> <span class="string">"blog-name"</span></span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+<p>这里需要下载一些文件，以及对主题的拉取，事件会稍微久点，等待拉取完后，进行一下操作，测试博客。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<p>注意：<code>hexo clean</code>命令是将项目的缓存进行清理，<code>hexo g</code>是生成博客的静态文件，<code>hexo s</code>是在本地开启预览的服务器。</p>
+<h3 id="配置部署"><a href="#配置部署" class="headerlink" title="配置部署"></a>配置部署</h3><p>首先在github仓库中，新建一个仓库，其仓库名一定是<code>&quot;GitHub账户名&quot;.github.io</code>，并设置开放的仓库。</p>
+<p>配置的话，在根目录下_config.yml文件中，在最后的<code>deploy</code>中，需要配置一下内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#39;git&#39;</span><br><span class="line">  repository: &#39;仓库名&#39;</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
+<h3 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<p>如果你配置了私钥，此时就不需要输入GitHub账号和密码，反之则会自己输入。</p>
+<h2 id="后期维护"><a href="#后期维护" class="headerlink" title="后期维护"></a>后期维护</h2><h3 id="修改更换主题"><a href="#修改更换主题" class="headerlink" title="修改更换主题"></a>修改更换主题</h3><p>在</p>
+<h3 id="设置关于、标签、分类、归档、时间线"><a href="#设置关于、标签、分类、归档、时间线" class="headerlink" title="设置关于、标签、分类、归档、时间线"></a>设置关于、标签、分类、归档、时间线</h3><h3 id="写文章发布"><a href="#写文章发布" class="headerlink" title="写文章发布"></a>写文章发布</h3>
       
     </div>
     <div class="article-footer">
@@ -391,7 +395,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://sitonlotus.github.io/2020/05/27/javascript/" title="javascript知识点整理和面试题详解" target="_blank" rel="external">https://sitonlotus.github.io/2020/05/27/javascript/</a>
+      <a href="https://sitonlotus.github.io/2020/05/12/making_blog_by_hexo/" title="使用hexo写博客并发布" target="_blank" rel="external">https://sitonlotus.github.io/2020/05/12/making_blog_by_hexo/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -421,94 +425,37 @@
     </div>
   </article>
   
-    
-  <section id="comments">
-  	
-      <div id="vcomments"></div>
-    
-  </section>
-
-
-  
 </div>
 
-  <nav class="bar bar-footer clearfix" data-stick-bottom>
-  <div class="bar-inner">
   
-  <ul class="pager pull-left">
-    
-    <li class="prev">
-      <a href="/2020/05/28/development_environment/" title="前端项目工程化构建"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
-    
-    <li class="next">
-      <a href="/2020/05/27/es6/" title="es6知识点整理及精选面试题详解"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
-    </li>
-    
-    
-  </ul>
+
   
-  
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
-  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
-    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
-  </div> -->
-  
-  
-  <div class="bar-right">
     
-    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
-    
-  </div>
-  </div>
-</nav>
-  
-<!-- Modal -->
-<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content donate">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      <div class="modal-body">
-        <div class="donate-box">
-          <div class="donate-head">
-            <p>感谢您的支持，我会继续努力的!</p>
-          </div>
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
-              <div class="donate-payimg">
-                <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
-              </div>
-              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
-              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
-              <div class="donate-payimg">
-                <img src="/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫" />
-              </div>
-              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
-              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
-            </div>
-          </div>
-          <div class="donate-footer">
-            <ul class="nav nav-tabs nav-justified" role="tablist">
-              <li role="presentation" class="active">
-                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
-              </li>
-              <li role="presentation" class="">
-                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="bar bar-footer clearfix" data-stick-bottom>
+        <div class="bar-inner">
+        <ul class="pager pull-left">
+            
+            <li class="prev">
+                <a href="/">
+                    <i class="icon icon-angle-left"></i>
+                    上一页
+                </a>
+            </li>
+            
+            
+            <li class="next disabled">
+                <a href="javascript:;">
+                    下一页
+                    <i class="icon icon-angle-right"></i>                    
+                </a>
+            </li>
+            
+        </ul>
+        <div class="total-article bar-right">Page 2 of 2</div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
+    </nav>
+    
+ 
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -569,33 +516,6 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
    
 
 
-
-
-   
-    
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/valine"></script>
-  <script type="text/javascript">
-  var GUEST = ['nick', 'mail', 'link'];
-  var meta = 'nick,mail,link';
-  meta = meta.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
-  });
-  new Valine({
-    el: '#vcomments',
-    verify: false,
-    notify: false,
-    appId: '',
-    appKey: '',
-    placeholder: 'Just go go',
-    avatar: 'mm',
-    meta: meta,
-    pageSize: '5' || 10,
-    visitor: false
-  });
-  </script>
-
-     
 
 
 

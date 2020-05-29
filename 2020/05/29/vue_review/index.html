@@ -17,24 +17,25 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>javascript知识点整理和面试题详解 | Hexo</title>
-  <meta name="description" content="JS初级 JS高级 JS面试题详解 1) 实现一个简单的EventEmitter，要求实现on(绑定事件)，off(解绑事件)和emit(触发事件)方法一： 12345678910111213141516171819202122232425262728293031323334function EventEmitter()&amp;#123;  this.handlers&#x3D;&amp;#123;&amp;#125;;  co">
+  <title>Vue复习和面试技巧 | Hexo</title>
+  <meta name="description" content="vue的原理和MVVM的解释vue.js是用于构建交互式的web界面的库。 它MVVM数据绑定和一个可组合的组件系统，具有简单、灵活的API。从技术上讲，vue.js集中在MVVM模式上的视图模型层，并通过双向数据绑定链接视图和模型（react是\MVC模式，单向数据流）。 实际的dom操作和输出格式被抽象出来成指令和过滤器来源于angular。相比其他的MVVM框架，vue.js更容易上手（re">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javascript知识点整理和面试题详解">
-<meta property="og:url" content="https://sitonlotus.github.io/2020/05/27/javascript/index.html">
+<meta property="og:title" content="Vue复习和面试技巧">
+<meta property="og:url" content="https://sitonlotus.github.io/2020/05/29/vue_review/index.html">
 <meta property="og:site_name" content="下弯的松枝">
-<meta property="og:description" content="JS初级 JS高级 JS面试题详解 1) 实现一个简单的EventEmitter，要求实现on(绑定事件)，off(解绑事件)和emit(触发事件)方法一： 12345678910111213141516171819202122232425262728293031323334function EventEmitter()&amp;#123;  this.handlers&#x3D;&amp;#123;&amp;#125;;  co">
+<meta property="og:description" content="vue的原理和MVVM的解释vue.js是用于构建交互式的web界面的库。 它MVVM数据绑定和一个可组合的组件系统，具有简单、灵活的API。从技术上讲，vue.js集中在MVVM模式上的视图模型层，并通过双向数据绑定链接视图和模型（react是\MVC模式，单向数据流）。 实际的dom操作和输出格式被抽象出来成指令和过滤器来源于angular。相比其他的MVVM框架，vue.js更容易上手（re">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-05-27T01:36:45.000Z">
-<meta property="article:modified_time" content="2020-05-28T03:04:36.579Z">
+<meta property="og:image" content="https://sitonlotus.github.io/.io//MVVM.png">
+<meta property="article:published_time" content="2020-05-29T06:26:16.000Z">
+<meta property="article:modified_time" content="2020-05-29T07:05:43.252Z">
 <meta property="article:author" content="刘作莲">
-<meta property="article:tag" content="知识点">
+<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="前端">
 <meta property="article:tag" content="面试">
-<meta property="article:tag" content="ES5">
-<meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://sitonlotus.github.io/.io//MVVM.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://sitonlotus.github.io/2020/05/27/javascript/index.html">
+  <link rel="canonical" href="https://sitonlotus.github.io/2020/05/29/vue_review/index.html">
   
     <link rel="alternate" href="/atom.xml" title="下弯的松枝" type="application/atom+xml">
   
@@ -340,14 +341,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-javascript" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-vue_review" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      javascript知识点整理和面试题详解
+      Vue复习和面试技巧
     </h1>
   
 
@@ -355,33 +356,32 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2020/05/27/javascript/" class="article-date">
-	  <time datetime="2020-05-27T01:36:45.000Z" itemprop="datePublished">2020-05-27</time>
+	<a href="/2020/05/29/vue_review/" class="article-date">
+	  <time datetime="2020-05-29T06:26:16.000Z" itemprop="datePublished">2020-05-29</time>
 	</a>
 </span>
         
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/ES5/" rel="tag">ES5</a>, <a class="article-tag-link" href="/tags/JavaScript/" rel="tag">JavaScript</a>, <a class="article-tag-link" href="/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/" rel="tag">知识点</a>, <a class="article-tag-link" href="/tags/%E9%9D%A2%E8%AF%95/" rel="tag">面试</a>
+	<a class="article-tag-link" href="/tags/Vue/" rel="tag">Vue</a>, <a class="article-tag-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a>, <a class="article-tag-link" href="/tags/%E9%9D%A2%E8%AF%95/" rel="tag">面试</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/05/27/javascript/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/05/29/vue_review/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h1 id="JS初级"><a href="#JS初级" class="headerlink" title="JS初级"></a>JS初级</h1><hr>
-<h1 id="JS高级"><a href="#JS高级" class="headerlink" title="JS高级"></a>JS高级</h1><hr>
-<h1 id="JS面试题详解"><a href="#JS面试题详解" class="headerlink" title="JS面试题详解"></a>JS面试题详解</h1><hr>
-<p>1) 实现一个简单的EventEmitter，要求实现on(绑定事件)，off(解绑事件)和emit(触发事件)<br>方法一：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">EventEmitter</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.handlers=&#123;&#125;;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.prototype);</span><br><span class="line">&#125;</span><br><span class="line">EventEmitter.prototype.on=<span class="function"><span class="keyword">function</span>(<span class="params">type,fn</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(!<span class="keyword">this</span>.handlers[type])&#123;</span><br><span class="line">    <span class="keyword">this</span>.handlers[type]=[];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">this</span>.handlers[type].push(fn);</span><br><span class="line">  <span class="comment">// console.log(this)</span></span><br><span class="line">&#125;</span><br><span class="line">EventEmitter.prototype.off = <span class="function"><span class="keyword">function</span>(<span class="params">type, fn</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!<span class="keyword">this</span>.handlers[type]) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (!fn) &#123;</span><br><span class="line">    <span class="keyword">this</span>.handlers[type] = <span class="literal">undefined</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">delete</span> <span class="keyword">this</span>.handlers[type];</span><br><span class="line">&#125;</span><br><span class="line">EventEmitter.prototype.emit = <span class="function"><span class="keyword">function</span>(<span class="params">type</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!<span class="keyword">this</span>.handlers[type]) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">this</span>.handlers[type].forEach(<span class="function"><span class="params">fn</span> =&gt;</span> fn());</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> h=<span class="keyword">new</span> EventEmitter();</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"hello"</span>)</span><br><span class="line">&#125;</span><br><span class="line">h.on(<span class="string">"f1"</span>,f1);</span><br><span class="line">h.emit(<span class="string">"f1"</span>,f1)</span><br><span class="line">h.off(<span class="string">"f1"</span>,f1)</span><br></pre></td></tr></table></figure>
-
-<p>方法二：</p>
+        <h1 id="vue的原理和MVVM的解释"><a href="#vue的原理和MVVM的解释" class="headerlink" title="vue的原理和MVVM的解释"></a>vue的原理和MVVM的解释</h1><p>vue.js是用于构建交互式的web界面的库。</p>
+<p>它MVVM数据绑定和一个可组合的组件系统，具有简单、灵活的API。从技术上讲，vue.js集中在MVVM模式上的视图模型层，并通过双向数据绑定链接视图和模型（react是\MVC模式，单向数据流）。</p>
+<p>实际的dom操作和输出格式被抽象出来成<code>指令和过滤器</code>来源于angular。相比其他的MVVM框架，vue.js更容易上手（react生成虚拟dom，用js控制   vue的dom是抽象出来的已经封装好的，不用自己写虚拟dom）。</p>
+<p>vue.js是一个用于创建web交互界面的库。它通过简单而灵活的API创建由数据驱动的UI组件。（react要自己写数据逻辑。vue全都封装好了，只要调用接口就行）</p>
+<p><img src="/.io//MVVM.png" alt="Vue的MVVM模型"></p>
+<p>1、<br>2、vue和react的区别（模式，书写格式，原理，类）<br>3、vue优点和使用的地方<br>4、vue搭建环境(生产环境和开发环境区别，齐页面应用) vue-cli _脚手架配置文件内容<br>5、vue实例属性和方法的含义(data 使用和原理，computed、 methods、 watch，在哪使用)<br>6、vue的生命周期<br>7、vue的指令原理，常用指令属性（总结所以循环、判断、特效、属性类事件类等）<br>8、vue的样式绑定(动态和静态区别)<br>9、keep-alive（动态组件）：那个版本加上，作用是什么，怎么用<br>10、条件指令使用，循环指令使用(数组、对象、判断)<br>11、v-show、v-if 原理和区别<br>12、事件绑定(绑定的指令,绑定原理、简写方式)<br>13、vue数据的双向绑定原理(重点解释v-model )<br>14、表单验证(实例必须完成+正则表达式)表单验证符<br>15、 全局组件、局部组件区别、注册方式<br>16、组件传值(子子、父子、子父、不相关的传值)<br>17、 创建组件的分发(分发原理、使用方式) |<br>18、vue动画使用类型(官方内容、常用动画效果)<br>19、路由(原理、类型、使用方式、路由的传值)<br>20、路由嵌套使用<br>21、导航守卫:原理应用场景、应用方式、导航守卫的类型。<br>22、后台交互:原生、axios、 vue-resource<br>23、Axios: 封装原理、包含的方法、跨域使用方式<br>24、vuex 原理、每一个模块作用，使用方式、使用场景<br>25、element-ul ( 后台管理)</p>
 
       
     </div>
@@ -391,7 +391,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://sitonlotus.github.io/2020/05/27/javascript/" title="javascript知识点整理和面试题详解" target="_blank" rel="external">https://sitonlotus.github.io/2020/05/27/javascript/</a>
+      <a href="https://sitonlotus.github.io/2020/05/29/vue_review/" title="Vue复习和面试技巧" target="_blank" rel="external">https://sitonlotus.github.io/2020/05/29/vue_review/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -437,13 +437,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2020/05/28/development_environment/" title="前端项目工程化构建"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2020/05/27/es6/" title="es6知识点整理及精选面试题详解"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2020/05/28/development_environment/" title="前端项目工程化构建"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
