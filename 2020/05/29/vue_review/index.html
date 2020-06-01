@@ -25,15 +25,15 @@
 <meta property="og:site_name" content="下弯的松枝">
 <meta property="og:description" content="vue的原理和MVVM的解释vue.js是用于构建交互式的web界面的库。 它MVVM数据绑定和一个可组合的组件系统，具有简单、灵活的API。从技术上讲，vue.js集中在MVVM模式上的视图模型层，并通过双向数据绑定链接视图和模型（react是\MVC模式，单向数据流）。 实际的dom操作和输出格式被抽象出来成指令和过滤器来源于angular。相比其他的MVVM框架，vue.js更容易上手（re">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://sitonlotus.github.io/.io//MVVM.png">
+<meta property="og:image" content="https://sitonlotus.github.io/2020/05/29/vue_review/MVVM.png">
 <meta property="article:published_time" content="2020-05-29T06:26:16.000Z">
-<meta property="article:modified_time" content="2020-05-29T07:16:05.512Z">
+<meta property="article:modified_time" content="2020-06-01T13:57:20.253Z">
 <meta property="article:author" content="刘作莲">
 <meta property="article:tag" content="Vue">
-<meta property="article:tag" content="面试">
 <meta property="article:tag" content="前端">
+<meta property="article:tag" content="面试">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://sitonlotus.github.io/.io//MVVM.png">
+<meta name="twitter:image" content="https://sitonlotus.github.io/2020/05/29/vue_review/MVVM.png">
   <!-- Canonical links -->
   <link rel="canonical" href="https://sitonlotus.github.io/2020/05/29/vue_review/index.html">
   
@@ -241,7 +241,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">6</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">7</span></li></ul>
     </div>
   </div>
 
@@ -253,6 +253,21 @@
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled no-thumbnail">
         
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2020/05/29/bugs_in_working/" class="title">工作中常出现的Bug</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2020-05-29T12:30:07.000Z" itemprop="datePublished">2020-05-29</time>
+              </p>
+            </div>
+          </li>
+          
           <li>
             
             <div class="item-inner">
@@ -313,21 +328,6 @@
             </div>
           </li>
           
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                
-              </p>
-              <p class="item-title">
-                <a href="/2020/05/12/making_div_centering/" class="title">div水平垂直居中.md</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2020-05-12T02:24:10.000Z" itemprop="datePublished">2020-05-12</time>
-              </p>
-            </div>
-          </li>
-          
       </ul>
     </div>
   </div>
@@ -380,8 +380,8 @@
 <p>它MVVM数据绑定和一个可组合的组件系统，具有简单、灵活的API。从技术上讲，vue.js集中在MVVM模式上的视图模型层，并通过双向数据绑定链接视图和模型（react是\MVC模式，单向数据流）。</p>
 <p>实际的dom操作和输出格式被抽象出来成<code>指令和过滤器</code>来源于angular。相比其他的MVVM框架，vue.js更容易上手（react生成虚拟dom，用js控制   vue的dom是抽象出来的已经封装好的，不用自己写虚拟dom）。</p>
 <p>vue.js是一个用于创建web交互界面的库。它通过简单而灵活的API创建由数据驱动的UI组件。（react要自己写数据逻辑。vue全都封装好了，只要调用接口就行）</p>
-<p><img src="/.io//MVVM.png" alt="Vue的MVVM模型"></p>
-<p>1、<br>2、vue和react的区别（模式，书写格式，原理，类）<br>3、vue优点和使用的地方<br>4、vue搭建环境(生产环境和开发环境区别，齐页面应用) vue-cli _脚手架配置文件内容<br>5、vue实例属性和方法的含义(data 使用和原理，computed、 methods、 watch，在哪使用)<br>6、vue的生命周期<br>7、vue的指令原理，常用指令属性（总结所以循环、判断、特效、属性类事件类等）<br>8、vue的样式绑定(动态和静态区别)<br>9、keep-alive（动态组件）：那个版本加上，作用是什么，怎么用<br>10、条件指令使用，循环指令使用(数组、对象、判断)<br>11、v-show、v-if 原理和区别<br>12、事件绑定(绑定的指令,绑定原理、简写方式)<br>13、vue数据的双向绑定原理(重点解释v-model )<br>14、表单验证(实例必须完成+正则表达式)表单验证符<br>15、 全局组件、局部组件区别、注册方式<br>16、组件传值(子子、父子、子父、不相关的传值)<br>17、 创建组件的分发(分发原理、使用方式) |<br>18、vue动画使用类型(官方内容、常用动画效果)<br>19、路由(原理、类型、使用方式、路由的传值)<br>20、路由嵌套使用<br>21、导航守卫:原理应用场景、应用方式、导航守卫的类型。<br>22、后台交互:原生、axios、 vue-resource<br>23、Axios: 封装原理、包含的方法、跨域使用方式<br>24、vuex 原理、每一个模块作用，使用方式、使用场景<br>25、element-ul ( 后台管理)</p>
+<p><img src="/2020/05/29/vue_review/MVVM.png" alt="Vue的MVVM模型"></p>
+<p>2、vue和react的区别（模式，书写格式，原理，类）<br>3、vue优点和使用的地方<br>4、vue搭建环境(生产环境和开发环境区别，齐页面应用) vue-cli _脚手架配置文件内容<br>5、vue实例属性和方法的含义(data 使用和原理，computed、 methods、 watch，在哪使用)<br>6、vue的生命周期<br>7、vue的指令原理，常用指令属性（总结所以循环、判断、特效、属性类事件类等）<br>8、vue的样式绑定(动态和静态区别)<br>9、keep-alive（动态组件）：那个版本加上，作用是什么，怎么用<br>10、条件指令使用，循环指令使用(数组、对象、判断)<br>11、v-show、v-if 原理和区别<br>12、事件绑定(绑定的指令,绑定原理、简写方式)<br>13、vue数据的双向绑定原理(重点解释v-model )<br>14、表单验证(实例必须完成+正则表达式)表单验证符<br>15、 全局组件、局部组件区别、注册方式<br>16、组件传值(子子、父子、子父、不相关的传值)<br>17、 创建组件的分发(分发原理、使用方式) |<br>18、vue动画使用类型(官方内容、常用动画效果)<br>19、路由(原理、类型、使用方式、路由的传值)<br>20、路由嵌套使用<br>21、导航守卫:原理应用场景、应用方式、导航守卫的类型。<br>22、后台交互:原生、axios、 vue-resource<br>23、Axios: 封装原理、包含的方法、跨域使用方式<br>24、vuex 原理、每一个模块作用，使用方式、使用场景<br>25、element-ul ( 后台管理)</p>
 
       
     </div>
@@ -436,6 +436,10 @@
   <div class="bar-inner">
   
   <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2020/05/29/bugs_in_working/" title="工作中常出现的Bug"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
     
     
     <li class="next">
