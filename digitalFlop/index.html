@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>vue-vue-digital-flop</title>
+  <title>vue-digital-flop</title>
   <link rel="stylesheet" href="./index.css">
 </head>
 
@@ -26,22 +26,22 @@
       <div class='container'>
         <div class="example-item">
           <h3> simple example</h3>
-          <code>&lt;vue-digital-flop :startVal=&#x27;0&#x27; :endVal=&#x27;2018&#x27; :duration=4000&gt;&lt;/vue-digital-flop&gt;</code>
-          <vue-digital-flop ref='example1' class='example1' :start-val=startVal1 :end-val='endVal1' :duration=4000></vue-digital-flop>
+          <code>&lt;vue-digital-flop :startVal=&#x27;0&#x27; :endVal=&#x27;2021&#x27; :duration=&#x27;4000&#x27;&gt;&lt;/vue-digital-flop&gt;</code>
+          <vue-digital-flop ref='example1' class='example1' :start-val=startVal1 :end-val='endVal1' :duration='4000'></vue-digital-flop>
           <div class='example-btn' @click='start1'>start</div>
           <div class='example-btn' @click='changeExampleEndVal'>change end-val</div>
           <div class='example-btn' @click='incrementalUpdate'>incremental update</div>
         </div>
         <div class="example-item">
           <h3> count down example</h3>
-          <code> &lt;vue-digital-flop :startVal=&#x27;2017&#x27; :endVal=&#x27;0&#x27; :duration=8000&gt;&lt;/vue-digital-flop&gt;</code>
-          <vue-digital-flop ref='example2' class='example2' :start-val='2017' :end-val=0 :duration=8000></vue-digital-flop>
+          <code> &lt;vue-digital-flop :startVal=&#x27;2021&#x27; :endVal=&#x27;0&#x27; :duration=8000&gt;&lt;/vue-digital-flop&gt;</code>
+          <vue-digital-flop ref='example2' class='example2' :start-val='2021' :end-val=0 :duration=8000></vue-digital-flop>
           <div class='example-btn' @click='start2'>start</div>
         </div>
         <div class="example-item">
           <h3>autoplay and frequent example</h3>
-          <code> &lt;vue-digital-flop :startVal=&#x27;0&#x27; :endVal=&#x27;2021&#x27; :isFrequent=&#x27;true&#x27; :frequentTime=&#x27;30*1000&#x27; :duration=8000&gt;&lt;/vue-digital-flop&gt;</code>
-          <vue-digital-flop ref='example3' class='example3' :start-val='0' :end-val=2021 :is-frequent='true' :frequent-time='30*1000' :duration='2000'></vue-digital-flop>
+          <code> &lt;vue-digital-flop :startVal=&#x27;0&#x27; :endVal=&#x27;2021&#x27; :isFrequent=&#x27;true&#x27; :frequentTime=&#x27;30*1000&#x27; :duration=&#x27;8000&#x27;&gt;&lt;/vue-digital-flop&gt;</code>
+          <vue-digital-flop ref='example3' class='example3' :start-val='0' :end-val='2021' :is-frequent='true' :frequent-time='30*1000' :duration='8000'></vue-digital-flop>
         </div>
         <div class="example-item">
           <h3> custom example</h3>
@@ -80,7 +80,7 @@
           setSuffix: 'rmb',
           setPrefix: '¥',
           startVal1:0,
-          endVal1:2017,
+          endVal1:2021,
           setFrequentTime: 5000
         }
       },
